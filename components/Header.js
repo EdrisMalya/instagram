@@ -59,7 +59,7 @@ const Header = () => {
                             <UserGroupIcon className={'navBtn'} />
                             <HeartIcon className={'navBtn'} />
 
-                            <img onClick={signOut} className={'h-10 rounded-full cursor-pointer'} src={session?.user?.image} alt=""/>
+                            <img loading={'lazy'} onClick={signOut} className={'h-10 rounded-full cursor-pointer'} src={session?.user?.image} alt=""/>
                         </>
                     ):(
                         <button onClick={signIn}>

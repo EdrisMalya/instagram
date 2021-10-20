@@ -6,7 +6,7 @@ const signIn = ({providers}) => {
         <>
             <Header />
             <div className={'flex flex-col items-center justify-center h-screen py-2  -mt-20 px-14 text-center'}>
-                <img className={'w-80'} src="https://links.papareact.com/ocw" alt=""/>
+                <img loading={'lazy'} className={'w-80'} src="https://links.papareact.com/ocw" alt=""/>
                 <p className={'font-xs italic'}>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, ratione.s
                 </p>

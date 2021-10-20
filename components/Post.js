@@ -110,7 +110,7 @@ const Post = ({id, username, userImage, img, caption}) => {
                 <div className={'ml-10 h-20 overflow-y-scroll scrollbar-thumb-black scrollbar-thin'}>
                     {comments.map(comment => (
                         <div className={'flex items-center space-x-2 mb-3'} key={comment.id}>
-                            <img className={'h-7 rounded-full'} src={comment.data().userImage} alt=""/>
+                            <img loading={'lazy'} className={'h-7 rounded-full'} src={comment.data().userImage} alt=""/>
                             <p className={'text-sm flex-1'}>
                                 <span className={'font-bold'}>{comment.data().username}</span> {" "}
                                 {comment.data().comment}

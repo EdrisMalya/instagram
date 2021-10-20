@@ -95,7 +95,7 @@ const Modal = () => {
                                             />
                                         </div>
                                     ): (
-                                        <img className={'w-full object-contain cursor-pointer'} src={selectedFile} onClick={()=>setSelectedFile(null)} alt=""/>
+                                        <img loading={'lazy'} className={'w-full object-contain cursor-pointer'} src={selectedFile} onClick={()=>setSelectedFile(null)} alt=""/>
                                     )
                                 }
 
